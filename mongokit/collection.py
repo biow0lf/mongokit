@@ -50,7 +50,7 @@ class Collection(PymongoCollection):
                     self._documents[key]()
                 if self._documents[key].indexes:
                     warn('%s: Be careful, index generation is not automatic anymore.'
-                         'You have to generate your index youself' % self._documents[key]._obj_class.__name__,
+                         'You have to generate your index yourself' % self._documents[key]._obj_class.__name__,
                          DeprecationWarning)
                 #self._documents[key].generate_index(self)
             return self._documents[key]
